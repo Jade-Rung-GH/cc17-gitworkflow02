@@ -5,6 +5,8 @@ const notFoundMiddleware = require('./middlewares/not-found');
 
 const app = express();
 
+app.use("/login", (req, res, next) => {});
+
 app.use('/comment',(req,res)=> {
     res.status(200).json({msg: 'Comment1...'})
 })
