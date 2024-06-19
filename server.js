@@ -5,7 +5,9 @@ const notFoundMiddleware = require("./middlewares/not-found");
 
 const app = express();
 
-
+app.use('/comment',(req,res)=> {
+    res.json({msg: 'Comment1...'})
+})
 
 
 app.use(notFoundMiddleware);
