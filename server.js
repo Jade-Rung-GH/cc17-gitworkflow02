@@ -5,8 +5,7 @@ const notFoundMiddleware = require("./middlewares/not-found");
 
 const app = express();
 
-
-
+app.use("/login", (req, res, next) => {});
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
