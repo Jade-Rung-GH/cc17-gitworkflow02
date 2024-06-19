@@ -5,12 +5,13 @@ const notFoundMiddleware = require('./middlewares/not-found');
 
 const app = express();
 
+app.use("/register", (req, res, next) => {});
+
 app.use("/login", (req, res, next) => {});
 
 app.use('/comment',(req,res)=> {
     res.status(200).json({msg: 'Comment1...'})
 })
-
 app.use('/comment02', (req, res, next) => {
   res.status(200).json({ msg: 'created comment 02' });
 });
